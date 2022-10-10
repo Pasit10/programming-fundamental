@@ -37,4 +37,3 @@ class Lab5Q5_465607{
         sc.close();
     }
 }
-

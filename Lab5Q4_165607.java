@@ -13,3 +13,5 @@ public class Lab5Q4_165607 {
         System.out.printf("Studens W = %d : Studens M = %d",w,m);
     }
 }
+
+
