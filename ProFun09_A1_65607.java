@@ -8,20 +8,25 @@ public class ProFun09_A1_65607 {
     }
 
     static void shake(int[] data){
+        int i = 0,j= 0;
         int zero = 0,get = 0;
-        for(int i = 0;i < data.length;i++){
-            if(data[i] == data[0])
-                zero++;
-            if(data[0] != data[i])
-                get = data[i];
-        }  
-        for(int j = 0;j < data.length;j++){
-            if(j >= zero){
-                data[j] = get;
+        while(j < data.length){
+            if(i < data.length){
+                if(data[i] == data[0]){
+                    zero++;
+                    data[j] = data[0];
+                }if(data[0] != data[i]){
+                    get = data[i];
+                }
+            }else{
+                j = i - data.length;
+                if(j < zero){
+                    data[j] = data[0];
+                }else if(j < data.length){
+                    data[j] = get;
+                }
             }
-            else{
-                data[j] = data[0];
-            }
+            i++;
         }
     }
 }

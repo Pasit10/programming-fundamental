@@ -3,8 +3,8 @@ import java.time.temporal.ChronoUnit;
 public class Lab7Q365607 {
     public static void main(String[] args){
         
-        LocalDate nov1yr21 = LocalDate.of(2002,2,9); //Tuesday
-        LocalDate jan1yr22 = LocalDate.of(2022,1,2); //Sunday
+        LocalDate nov1yr21 = LocalDate.of(2002,2,7); //Tuesday
+        LocalDate jan1yr22 = LocalDate.of(2003,2,9); //Sunday
         long daysBetween;
         daysBetween = ChronoUnit.DAYS.between(nov1yr21,jan1yr22);
         System.out.println(nov1yr21 + " was " + nov1yr21.getDayOfWeek() + ".It is "+ daysBetween + " days to Sunday 2022-01-02");

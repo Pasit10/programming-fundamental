@@ -10,10 +10,10 @@ public class ProFun09_Q2_65607 {
 
     static int[][] flipHorizontal(int[][] data){
         int[][] aRef = new int[data.length][data[0].length];
-        int Tumraideva = 0;
+        int row = 0;
         for(int i = data.length-1; i >= 0;i--){
-            aRef[i] = data[Tumraideva];
-            Tumraideva++;
+            aRef[i] = data[row];
+            row++;
         }
         return aRef;
     }
