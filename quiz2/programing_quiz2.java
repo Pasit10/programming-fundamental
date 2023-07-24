@@ -34,7 +34,7 @@ public class programing_quiz2 {
         boolean b = recursiveSolve(maze,stX,stY,edX,edY,wasHere); 
         return b;
     }
-    
+
     static boolean recursiveSolve(int[][] maze,int x,int y,int endX,int endY,boolean[][] wasHere){
         if (x == endX && y == endY){
             return true;
@@ -47,17 +47,14 @@ public class programing_quiz2 {
             if (recursiveSolve(maze,x-1, y,endX,endY,wasHere)) {
                 return true;
             }
-        
         if (x != maze.length - 1)
             if (recursiveSolve(maze,x+1, y,endX,endY,wasHere)) { 
                 return true;
             }
-        
         if (y != 0)
             if (recursiveSolve(maze,x, y-1,endX,endY,wasHere)) { 
                 return true;
             }
-        
         if (y != maze[0].length - 1)
             if (recursiveSolve(maze,x, y+1,endX,endY,wasHere)) {
                 return true;
